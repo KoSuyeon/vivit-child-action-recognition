@@ -1,9 +1,15 @@
 # 🍼 영유아 행동 인식 시스템 — ViViT 기반
 
+<p align="left">
+  <strong>발표자료</strong>&nbsp;
+  <a href="./ppt/vivit_child_action_recognition.pdf">
+    <img align="center" src="https://img.shields.io/badge/PRESENTATION-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white">
+  </a>
+</p>
+
 > **Video Vision Transformer(ViViT)** 를 활용하여 영유아의 발달 행동을 자동으로 인식·분류하는 프로젝트입니다.  
 > 어린이집 교사가 원아의 행동을 빠짐없이 기록하기 어렵다는 현장의 문제에서 출발했습니다.
 
----
 
 ## 📋 프로젝트 개요
 
