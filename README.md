@@ -2,7 +2,7 @@
 
 <p align="left">
   <strong>발표자료</strong>&nbsp;
-  <a href="./ppt/vivit_child_action_recognition.pdf">
+  <a href="./presentation/vivit_presentation.pdf">
     <img align="center" src="https://img.shields.io/badge/PRESENTATION-PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white">
   </a>
 </p>
@@ -23,14 +23,35 @@
 
 ---
 
-## 🎯 주제 선정 배경
+## 🧩 Domain Research & User Interview
 
-어린이집 표준보육과정(제4차)에 따르면, 교사는 원아의 행동 발달을 6개 영역으로 관찰·기록해야 합니다.
+본 프로젝트는 실제 보육 현장의 어려움을 이해하기 위해 보육교사 인터뷰 및 발달 관찰 업무 프로세스 분석을 기반으로 기획되었습니다.
+인터뷰 결과, *"물리적으로 모든 행동을 기록하기 어렵다"* 는 교사들의 공통된 어려움과 *"우리 아이의 발달 정보를 더 많이 받고 싶다"* 는 학부모의 니즈를 확인했습니다.
 
-- **01 기본 생활** / **02 신체 운동** / **03 의사소통**
-- **04 사회 관계** / **05 예술 경험** / **06 자연 탐구**
+주요 인사이트:
+- 관찰지 / 알림장 / 일지 작성에 많은 시간 소요
+- 교사는 아이 행동을 모두 기억하기 어려움
+- 부모는 발달 상태 및 또래 관계를 가장 궁금해함
+- 행동 기반 발달 관찰 자동화 수요 존재
 
-현장 인터뷰 결과, *"물리적으로 모든 행동을 기록하기 어렵다"* 는 교사들의 공통된 어려움과 *"우리 아이의 발달 정보를 더 많이 받고 싶다"* 는 학부모의 니즈를 확인했습니다.
+👉 자세한 인터뷰 및 요구사항 분석:
+[Domain Research Document](./docs/domain_research.md)
+
+---
+
+## 📁 파일 구조
+
+```
+vivit-child-action/
+├── README.md
+├── requirements.txt
+├── parameters.txt          # 하이퍼파라미터 설정
+├── labels.txt              # 클래스 라벨 정의
+├── crawling.ipynb          # 유튜브 영상 크롤링
+├── preprocess.ipynb        # 데이터 전처리 및 분할
+└── model.ipynb             # ViViT 모델 정의, 학습, 추론
+```
+
 
 ---
 
@@ -178,21 +199,6 @@ inputdata/
 
 ```bash
 jupyter notebook model.ipynb
-```
-
----
-
-## 📁 파일 구조
-
-```
-vivit-child-action/
-├── README.md
-├── requirements.txt
-├── parameters.txt          # 하이퍼파라미터 설정
-├── labels.txt              # 클래스 라벨 정의
-├── crawling.ipynb          # 유튜브 영상 크롤링
-├── preprocess.ipynb        # 데이터 전처리 및 분할
-└── model.ipynb             # ViViT 모델 정의, 학습, 추론
 ```
 
 ---
