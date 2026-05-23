@@ -1,0 +1,3 @@
+Clapping: 0
+Sipping: 1
+Stacking_Rings: 2

@@ -1,0 +1,19 @@
+DATA_PATH: "action"
+NUM_CLASSES: 3
+SPLIT_RATIOS: {"train": 0.6, "val": 0.2, "test": 0.2}
+frame_interval: 5
+min_frame_count: float('12')
+image_size: (60,60)
+BATCH_SIZE: 16
+AUTO: tf.data.AUTOTUNE
+INPUT_SHAPE: (12, 60, 60, 3)
+LEARNING_RATE: 1e-4
+WEIGHT_DECAY: 1e-5
+EPOCHS: 60
+PATCH_SIZE: (4, 4, 4)
+NUM_PATCHES: (INPUT_SHAPE[0] // PATCH_SIZE[0]) ** 2
+LAYER_NORM_EPS: 1e-6
+PROJECTION_DIM: 128
+NUM_HEADS: 8
+NUM_LAYERS: 8
+LABELS: ['Clapping', 'Sipping', 'Stacking_Rings']
